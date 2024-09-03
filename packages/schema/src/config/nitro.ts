@@ -15,9 +15,7 @@ export default defineUntypedSchema({
           ...runtimeConfig,
           app: {
             ...runtimeConfig.app,
-            baseURL: runtimeConfig.app.baseURL.startsWith('./')
-              ? runtimeConfig.app.baseURL.slice(1)
-              : runtimeConfig.app.baseURL,
+            baseURL: runtimeConfig.app.baseURL,
           },
           nitro: {
             envPrefix: 'NUXT_',
